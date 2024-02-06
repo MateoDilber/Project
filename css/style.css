@@ -343,6 +343,774 @@ footer {
   display: none;
 }
 
+/*Inlog*/
+body {
+  margin: 0;
+  background-image: url("../img/background1.png");
+  background-size: 110%;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  color: white  ;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-image: url("../img/NavFoot.png");
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav .search-bar {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav .search-bar input {
+  width: 25%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+  .inlog {
+    margin-left: 580px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: white;
+    justify-content: center;
+  }
+  .inlog1 {
+    margin-top: 250px;
+    padding-bottom: 200px;
+    color:white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-left: 460px;
+  }
+
+  .inlog-button{
+    position: relative;
+    top: 25px;
+    background: #8B0000;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 50px;
+    margin: 20px 0;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .inlog-button:hover{
+    transform: translateY(-5px);
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 125px;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 40vh;
+    background-image: url("../img/Sidebar.png");
+  }
+
+  .sidebar-right {
+    height: 200%;
+    width: 7vw;
+    background-color: #333;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 95vh;
+    float: right;
+    background-image: url("../img/Sidebar.png");
+}
+  
+  .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    border: solid #fff;
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  .sidebar p {
+    font-size: 14px;
+  }
+  
+  .sidebar a:hover {
+    background-color: #555;
+  }
+
+  .iets {
+    display: flex;
+  }
+  
+  .div-links {
+    flex: 0 1 5vw;
+  }
+
+  .div-rechts {
+    flex: 0 1 5vw;
+  }
+  .div-mid {
+    flex: 1 1 auto;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    background-image: url("../img/FootFoot.png");
+  }
+
+  .social-links {
+    float: right;
+  }
+  
+  .social-links img {
+    display: inline-block;
+    margin: 5px;
+    width: 30px;
+    height: auto;
+  }
+  /*Forum*/
+  @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+body {
+  margin: 0;
+  background-image: url("../img/background1.png");
+  background-size: 110%;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+h1 {
+  font-size: 50px;
+}
+/* Styling voor de navigatie */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-image: url("../img/NavFoot.png");
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav .search-bar {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav .search-bar input {
+  width: 25%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+nav .nav-inlog {
+  padding: 12px 30px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Styling voor de sidebar */
+.sidebar {
+  height: 100%;
+  width: 125px;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+  padding-bottom: 40vh;
+  background-image: url("../img/Sidebar.png");
+}
+
+.sidebar-right {
+  height: 100%;
+  width: 125px;
+  background-color: #333;
+  padding-top: 20px;
+  box-sizing: border-box;
+  padding-bottom: 150vh;
+  float: right;
+  background-image: url("../img/Sidebar.png");
+  transform: scaleX(-1);
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  width: 50px;
+  height: 50px;
+  border: solid #fff;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.sidebar p {
+  font-size: 14px;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+/* Styling voor de footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 25px;
+  background-image: url("../img/NavFoot.png");
+}
+
+.button-left {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.social-links {
+  float: right;
+}
+
+.social-links img {
+  display: inline-block;
+  margin: 5px;
+  width: 40px;
+  height: auto;
+}
+
+.iets {
+  display: flex;
+}
+
+.div-links {
+  flex: 0 1 5vw;
+}
+
+.div-mid {
+  flex: 1 1 auto;
+}
+
+.div-rechts {
+  flex: 0 1 5vw;
+}
+/* tbh geen idee wat dit is */
+.form {
+  background-color: rgb(9, 16, 28);
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 95%;
+  height: 40%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.balkje {
+  background-color: rgb(64, 77, 101);
+  text-align: center;
+  padding: 0px;
+  margin: 3% auto;
+  width: 94%;
+  height: 100px;
+}
+.balkje1 {
+  background-color: rgb(50, 60, 79);
+}
+.balkje2 {
+  background-color: rgb(50, 60, 79);
+}
+.balkje3 {
+  background-color: rgb(50, 60, 79);
+}
+
+.balkbreedte {
+  padding: 0px;
+  margin: 3% auto;
+  width: 94%;
+  height: 200px;
+  position: relative;
+}
+
+.balkafbeelding img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  height: 200px;
+  width: 200px;
+}
+
+.balkafbeelding p {
+  position: absolute;
+  top: 10px;
+  left: 220px;
+}
+
+.balkgeenafbeelding p {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.form2 {
+  background-color: rgb(9, 16, 28);
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 95%;
+  height: 40%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.kat {
+  background-color: rgb(64, 77, 101);
+  text-align: center;
+  padding: 0px;
+  margin: 3% auto;
+  width: 94%;
+  height: 100px;
+}
+
+.afbeelding1 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding2 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding3 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding4 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding5 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding6 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding7 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding8 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding9 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding10 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding11 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding12 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding13 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding14 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding15 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding16 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding17 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+.afbeelding18 img {
+  height: 250px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 47px;
+}
+
+/*Navcss*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+
+body p {
+    font-size: 20px;
+    background-image: url("../img/background1.png");
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-image: url("../img/NavFoot.png");
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav .search-bar {
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+nav .search-bar input {
+    width: 25%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+nav .nav-inlog {
+    padding: 12px 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 125px;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 40vh;
+    background-image: url("../img/Sidebar.png");
+}
+
+.sidebar-right {
+    height: 100%;
+    width: 7vw;
+    background-color: #333;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 95vh;
+    float: right;
+    background-image: url("../img/Sidebar.png");
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    border: solid #fff;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    background-image: url("../img/FootFoot.png");
+}
+
+.button-left {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-links {
+    float: right;
+}
+
+.social-links img {
+    display: inline-block;
+    margin: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.iets {
+    display: flex;
+}
+
+.div-links {
+    flex: 0 1 5vw;
+}
+
+.div-mid {
+    flex: 1 0 auto;
+}
+
+.div-rechts {
+    flex: 0 1 5vw;
+}
+
+/*page*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    background-image: url("../img/background1.png");
+}
+
+.parent div {
+    padding: 20px;
+    text-align: center;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-image: url('https://www.shutterstock.com/image-vector/vector-pixel-background-evening-sky-260nw-1649940421.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25vh;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 6 / 2;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+    font-size: 30px;
+    height: fit-content;
+    background-color: #ffffff7b;
+}
+
+.div4 {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 40vw;
+    height: fit-content;
+    margin-top: -15vh;
+    background-color: #ffffff7b;
+}
+
+.div5 {
+    grid-area: 4 / 1 / 5 / 2;
+    width: 40vw;
+    height: fit-content;
+    margin-top: -15vh;
+    background-color: #ffffff7b;
+}
+
+.div6 {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.div6 img {
+    width: 5vw;
+}
+
+.div7 {
+    grid-area: 2 / 2 / 6 / 3;
+    border-left: dotted rgb(255, 255, 255);
+}
+
+.div8 {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 30px;
+    height: fit-content;
+    background-color: #ffffff7d;
+}
+
+.div9 {
+    grid-area: 3 / 2 / 5 / 3;
+    width: 40vw;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: -15vh;
+}
+
+.div9 div {
+    border: solid rgb(255, 255, 255);
+    background-color: #ffffff7b;
+}
+
+.div10 {
+    grid-area: 5 / 2 / 6 / 3;
+    text-align: left;
+    font-size: 30px;
+    margin-top: -10vh;
+    background-color: #ffffff7b;
+}
+
+.div10 h6 {
+    padding: 0;
+    font-size: 25px;
+}
+
+.review-title {
+    width: 20vw;
+}
+
+.review-text {
+    width: 40vw;
+    height: 15vh;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-links {
     display: none;
