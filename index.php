@@ -1,64 +1,55 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    $sql = "SELECT * FROM user
+            WHERE id = {$_SESSION["user_id"]}";
+            
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+}
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>Home</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Inlog.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-    <nav>
-    <div class="logo">
-        <img src="https://art.pixilart.com/fb41e74302b2297.png" alt="Logo" />
-    </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-        </div>
+    
+    <h1>Home</h1>
+    
+    <?php if (isset($user)): ?>
         
-    </nav>
-
-
-    <div class="iets">
-        <div class="div-links">
-            <div class="sidebar">
-                
-            </div>
-        </div>
-
-
-        <div class="div-mid">
-        <h1 class="inlog">Inloggen</h1>
-        <form action="login2.php" method="post" class="inlog1">
-            <label for="email">E-mail:</label>
-            <input type="text" id="email" name="email"placeholder="Email" size="25"><br><br>      
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="password"placeholder="Password"><br><br>
-            <h2>Druk op de button om in te loggen.</h2>
-            <input type="submit" value="Inloggen" class="inlog-button">
-        </form>  
-        </div>
-        <div class="div-rechts"></div>
-            <div class="sidebar-right"></div>  
-        </div>
-    </div>
-
+        <p>Hello <?= htmlspecialchars($user["name"]) ?></p>
+        
+        <p><a href="logout.php">Log out</a></p>
+        
+    <?php else: ?>
+        
+        <p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
+        
+    <?php endif; ?>
     
 </body>
-
-    <footer>
-      <div class="social-links">
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img src="img/insta trans.png" alt="Instagram"
-        /></a>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img src="img/facebook trans.png" alt="Facebook"
-        /></a>
-        <a href="https://twitter.com/" target="_blank"
-          ><img src="img/twitter trans.png" alt="Twitter"
-        /></a>
-      </div>
-    </footer>
-    
- 
 </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
